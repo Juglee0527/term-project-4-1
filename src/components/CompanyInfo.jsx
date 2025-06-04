@@ -15,7 +15,7 @@ function CompanyInfo() {
                 <li><strong>대표자:</strong> 김하율</li>
                 <li><strong>본사 위치:</strong> 경기도 안양시 동안구 시민대로 248번길 25, 703·706호</li>
                 <li><strong>주요 사업:</strong> 스마트팩토리 시스템, 탄소중립 솔루션, IoT 기반 장비</li>
-                <li><strong>홈페이지:</strong> <a href="https://www.hygino.co.kr" target="_blank" rel="noreferrer">www.hygino.co.kr</a></li>
+                <li><strong>홈페이지:</strong> <a href="https://hygino.recruiter.im" target="_blank" rel="noreferrer">https://hygino.recruiter.im</a></li>
             </ul>
         </section>
     );
