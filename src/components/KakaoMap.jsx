@@ -14,12 +14,12 @@ function KakaoMap() {
                 window.kakao.maps.load(() => {
                     const container = document.getElementById('map');
                     const options = {
-                        center: new window.kakao.maps.LatLng(37.3948, 126.9584),
+                        center: new window.kakao.maps.LatLng(37.392221, 126.958969),
                         level: 3,
                     };
                     const map = new window.kakao.maps.Map(container, options);
                     new window.kakao.maps.Marker({
-                        position: new window.kakao.maps.LatLng(37.3948, 126.9584),
+                        position: new window.kakao.maps.LatLng(37.392221, 126.958969),
                         map: map,
                     });
                 });
