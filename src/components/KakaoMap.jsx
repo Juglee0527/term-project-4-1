@@ -13,16 +13,23 @@ function KakaoMap() {
             if (window.kakao && window.kakao.maps) {
                 window.kakao.maps.load(() => {
                     const container = document.getElementById('map');
+                    if (!container) return;
+
+                    const centerLatLng = new window.kakao.maps.LatLng(37.392221, 126.958969);
                     const options = {
-                        center: new window.kakao.maps.LatLng(37.392221, 126.958969),
+                        center: centerLatLng,
                         level: 3,
                     };
+
                     const map = new window.kakao.maps.Map(container, options);
+
                     new window.kakao.maps.Marker({
-                        position: new window.kakao.maps.LatLng(37.392221, 126.958969),
-                        map: map,
+                        position: centerLatLng,
+                        map,
                     });
                 });
+            } else {
+                console.error('Kakao 지도 SDK 로드 실패');
             }
         };
 

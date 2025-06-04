@@ -3,7 +3,7 @@ import KakaoMap from './components/KakaoMap';
 
 function App() {
     return (
-        <div>
+        <div style={{ fontFamily: 'Arial, sans-serif' }}>
             <CompanyInfo />
             <KakaoMap />
         </div>
