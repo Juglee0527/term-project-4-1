@@ -2,7 +2,7 @@ import React from 'react';
 
 function CompanyInfo() {
     return (
-        <section style={{ padding: '2rem' }}>
+        <section>
             <h1>하이지노 (Hygino Inc.)</h1>
             <p>
                 하이지노는 스마트팩토리와 탄소중립 솔루션을 개발하는 IT 기업입니다.

@@ -1,9 +1,10 @@
 import CompanyInfo from './components/CompanyInfo';
 import KakaoMap from './components/KakaoMap';
+import './App.css';
 
 function App() {
     return (
-        <div style={{ fontFamily: 'Arial, sans-serif' }}>
+        <div className="container">
             <CompanyInfo />
             <KakaoMap />
         </div>

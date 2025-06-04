@@ -13,23 +13,16 @@ function KakaoMap() {
             if (window.kakao && window.kakao.maps) {
                 window.kakao.maps.load(() => {
                     const container = document.getElementById('map');
-                    if (!container) return;
-
-                    const centerLatLng = new window.kakao.maps.LatLng(37.392221, 126.958969);
                     const options = {
-                        center: centerLatLng,
+                        center: new window.kakao.maps.LatLng(37.392221, 126.958969),
                         level: 3,
                     };
-
                     const map = new window.kakao.maps.Map(container, options);
-
                     new window.kakao.maps.Marker({
-                        position: centerLatLng,
-                        map,
+                        position: new window.kakao.maps.LatLng(37.392221, 126.958969),
+                        map: map,
                     });
                 });
-            } else {
-                console.error('Kakao 지도 SDK 로드 실패');
             }
         };
 
@@ -37,12 +30,9 @@ function KakaoMap() {
     }, []);
 
     return (
-        <section style={{ padding: '2rem' }}>
+        <section>
             <h3>📍 회사 위치</h3>
-            <div
-                id="map"
-                style={{ width: '100%', height: '400px', border: '1px solid #ccc' }}
-            ></div>
+            <div id="map"></div>
         </section>
     );
 }
