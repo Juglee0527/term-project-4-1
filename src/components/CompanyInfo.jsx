@@ -3,7 +3,7 @@ import React from 'react';
 function CompanyInfo() {
     return (
         <section>
-            <h1>하이지노 (Hygino Inc.)</h1>
+            <h1>하이지노</h1>
             <p>
                 하이지노는 스마트팩토리와 탄소중립 솔루션을 개발하는 IT 기업입니다.
                 AI, IoT, 데이터 분석 기술을 바탕으로 제조업의 디지털 전환을 선도하고 있습니다.
