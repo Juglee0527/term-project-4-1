@@ -26,6 +26,12 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
 
+// 서버 정상 작동 확인
+app.get('/', (req, res) => {
+    res.send('🟢 백엔드 서버 정상 작동 중입니다!');
+});
+
+
 // 로고 업로드 API
 app.post('/upload-logo', upload.single('file'), (req, res) => {
     res.json({ success: true, filename: req.file.filename });
